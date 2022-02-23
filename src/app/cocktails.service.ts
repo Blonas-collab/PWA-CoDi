@@ -1,8 +1,8 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Dexie } from 'dexie';
 import { Cocktails } from './cocktails';
 import { v4 } from 'uuid';
-import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'

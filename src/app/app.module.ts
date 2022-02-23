@@ -25,6 +25,7 @@ import { HttpClientModule } from '@angular/common/http';
     NavComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
