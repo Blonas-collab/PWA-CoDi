@@ -20,8 +20,8 @@ export class CocktailsService extends Dexie{
       return this.cocktails.toArray();
     }
 
-    add(title: string, hashtag: string, date: Date) {
-      this.cocktails.add({ title, id: v4(), hashtag, date});
+    add(cocktail: string) {
+      this.cocktails.add({ cocktail, id: v4()});
     }
 
     async sync() {

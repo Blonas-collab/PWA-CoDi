@@ -1,11 +1,11 @@
-<input #cocktailsInput1>
-<input #cocktailsInput2>
-<input type="date" #cocktailsInput3>
-<button (click)="add(cocktailsInput1.value, cocktailsInput2.value, cocktailsInput3.value)">Hinzufügen</button>
+<p>Hallo</p>
+<input #cocktailsInput>
+
+<button (click)="add(cocktailsInput.value)">Hinzufügen</button>
 <button (click)="sync()">Sync</button>
 
 <ul>
     <li *ngFor="let cocktails of cocktails">
-      {{ cocktails.title, cocktails.hashtag, cocktails.date }}
+      {{ cocktails.cocktail }}
     </li>
   </ul>

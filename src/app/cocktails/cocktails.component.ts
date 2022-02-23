@@ -16,8 +16,8 @@ export class CocktailsComponent implements OnInit {
     this.loadCocktails();
   }
 
-  async add(title: string, hashtag: string, date: Date) {
-    await this.cocktailsService.add(title, hashtag, date);
+  async add(cocktail: string) {
+    await this.cocktailsService.add(cocktail);
     await this.loadCocktails();
   }
 
