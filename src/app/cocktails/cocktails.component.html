@@ -1,9 +1,23 @@
-<p>Hallo</p>
-<input #nameCocktail> #
-<input #hashtagCocktail>
+<div class="wrapper">
+  <h1>Your Cocktail Diary </h1>
+
+<p>Describe your Cocktail Experience</p>
+<div class="wrapper-container">
+  <div class="container-input">
+    <label for="cocktailname" name="cocktailname" class="cocktail-label"> Cocktail</label>
+    <input id ="cocktailname" name="cocktailname" class="cocktail-input" #nameCocktail>
+  </div>
+  
+  <div class="container-input">
+    <label for="hashtag" name="hashtag" class="hastag-label">Hashtag</label>
+    <input id="hashtag" name="hastag" class="hastag-input" #hashtagCocktail>
+  </div>
+  
+</div>
+
 
 <button (click)="add(nameCocktail.value, hashtagCocktail.value)">Hinzufügen</button>
-<button (click)="sync()">Sync</button>
+<button (click)="sync()">Sync here</button>
 
 <ul>
     <li *ngFor="let cocktails of cocktails">

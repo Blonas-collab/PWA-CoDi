@@ -1,0 +1,30 @@
+* {
+    color: #707070;
+}
+.wrapper {
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+.wrapper-container{
+    display: flex;
+    width: 340px;
+}
+
+.container-input input {
+    border-radius: 18px;
+    border-style: none;
+	box-shadow: 10px 20px 15px silver;
+	border-radius: 18px;
+    
+}
+
+
+
+h1 {
+    font-family: Oswald;
+    }
+    
+button {
+     font-family: Oswald;
+    }
