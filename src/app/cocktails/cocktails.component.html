@@ -7,6 +7,7 @@
 
 <ul>
     <li *ngFor="let cocktails of cocktails">
-      {{ cocktails.cocktail + " #" + cocktails.hashtag }}
+      <h2 class="cocktailname">{{ cocktails.cocktail }}</h2>
+      <p class="cocktailhashtag"> {{ "#" + cocktails.hashtag}} </p>
     </li>
   </ul>
