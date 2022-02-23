@@ -1,1 +1,7 @@
-<p>cocktails works!</p>
+<p>
+  <ul>
+    <li *ngFor="let cocktails of cocktails">
+      {{ cocktails.title, cocktails.hashtag, cocktails.date }}
+    </li>
+  </ul>
+</p>

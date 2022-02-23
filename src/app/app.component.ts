@@ -18,11 +18,11 @@ export class AppComponent {
     });
   }
 
- /* async subscribe(){
+ async subscribe(){
     const subscription = await this.swPush.requestSubscription({
       //from localhost:3030
       serverPublicKey: 'BLI8zF79Z1kCQq72RgzYs0WtQ0ojY3XCqPwmgcNP-8LJIeXRep9sv6h41hErJDewrm3WDbFMPyyPhYO7-ClXabQ'
     });
     await this.httpClient.post('http://localhost:3030/push', subscription.toJSON()).toPromise();
-  }*/
+  }
 }
