@@ -1,24 +1,63 @@
 * {
     color: #707070;
 }
+
+
+
 .wrapper {
-    margin: 20px auto;
     max-width: 400px;
+    margin: 20px 10px;
 }
+
+@media (min-width: 375px) {
+    .wrapper {
+        margin: 20px auto;
+    }
+} 
 
 .wrapper-container{
     display: flex;
-    width: 340px;
+    min-width: 400px;
+    flex-direction: column;
 }
 
+@media (min-width: 375px) {
+    .wrapper-container {
+     flex-direction: row;
+    }
+} 
+
+.container-input {
+    margin: 10px;
+    display: flex;
+}
+.container-input label {
+    margin-right: 10px;
+    width: 10px;
+    padding: 5px 2px;
+
+}
 .container-input input {
     border-radius: 18px;
     border-style: none;
-	box-shadow: 10px 20px 15px silver;
+	box-shadow: 0px 3px 6px #00000016;
 	border-radius: 18px;
-    
+    padding: 5px 10px;
+    height: 25px;
 }
 
+@media (min-width: 375px) {
+    .container-input input {
+        height: 20px;
+    } 
+}
+
+::placeholder {
+    font-family: Oswald;
+    font-size: 14px;
+    color: #B7B7B7;
+    margin: 10px;
+}
 
 
 h1 {
@@ -28,3 +67,4 @@ h1 {
 button {
      font-family: Oswald;
     }
+
