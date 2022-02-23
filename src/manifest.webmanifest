@@ -1,7 +1,7 @@
 {
   "name": "CoDi - Cocktail Diary",
   "short_name": "CoDi",
-  "theme_color": "#c4dfe6",
+  "theme_color": "#A88661",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "./",
