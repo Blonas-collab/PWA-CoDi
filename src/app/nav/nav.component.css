@@ -26,3 +26,19 @@
 span {
   width: 100%;
 }
+
+.sidenav {
+  background: #A88661;
+}
+
+.mat-list-item {
+  font-family: Oswald;
+  font-size: 16px;
+  color: white;
+}
+
+.nav-menu {
+  font-family: Oswald;
+  font-size: 20px;
+  color: white;
+}
