@@ -14,4 +14,15 @@
   position: sticky;
   top: 0;
   z-index: 1;
+  background: #A88661;
+}
+
+.logo {
+  width: 8.5%;
+  height: auto;
+  float: right;
+}
+
+span {
+  width: 100%;
 }
