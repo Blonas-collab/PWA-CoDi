@@ -169,3 +169,9 @@ button:hover {
        left:45%;
     } 
 }
+
+.sync-button {
+    position: absolute;
+    z-index: 1;
+    right: 1em;
+}
