@@ -93,18 +93,26 @@ button {
   
 button:hover {
     cursor: pointer;
+    background-color: #A88661;
+    color: white;
+}
+.add-btn {
+    width: 100%;
 }
 
 @media (min-width: 768px ) {
     button {
         height: 30px;
         margin-left: 10px;
+        margin-top: unset;
     }
+    .add-btn {
+        max-width: 60px;
+    }
+
 }
 
-.add-btn {
-    width: 100%;
-}
+
 
 
 
