@@ -1,0 +1,37 @@
+* {
+    color: #707070;
+    font-family: Oswald;
+    font-size: 14px;
+}
+
+.wrapper-container{
+    text-align: left;
+    width: 60%;
+    margin:70px auto;
+}
+
+h1{
+    font-weight: bold;
+}
+
+.image-people{
+    width: 500px;
+    height: auto;
+    margin-right: 10%;
+}
+
+.image-wrapper{
+display: flex;
+justify-content: right;
+}
+
+@media (max-width: 1000px) {
+    .image-people{
+        width: 300px;
+        height: auto;
+    }
+    .image-wrapper{
+    display: flex;
+    justify-content: center;
+    }
+}

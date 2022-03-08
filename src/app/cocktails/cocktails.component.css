@@ -1,3 +1,177 @@
-::placeholder{
-  color:gray;
+* {
+    color: #707070;
+}
+p {
+
+}
+
+.wrapper {
+    max-width: 1200px;
+    position: relative;
+}
+
+@media (min-width: 1000px) {
+    .wrapper {
+        margin: 0 50px auto;
+    }
+}
+
+.wrapper-input {
+    max-width: 400px;
+    margin: 30px 20px 20px 20px;
+}
+ 
+
+.wrapper-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .wrapper-container {
+     flex-direction: row;
+    }
+} 
+
+.container-input {
+    margin: 10px;
+    display: flex;
+    width: 100%;
+}
+
+.container-input label {
+    margin-right: 10px;
+    width: 10px;
+    padding: 5px 2px;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+.container-input input {
+    border-radius: 18px;
+    border-style: none;
+	box-shadow: 0px 3px 6px #00000016;
+	border-radius: 18px;
+    padding: 5px 10px;
+    height: 25px;
+    width: 75%;
+}
+
+@media (min-width: 768px) {
+    .container-input input {
+        height: 20px;
+    } 
+}
+
+::placeholder {
+    font-family: Oswald;
+    font-size: 14px;
+    color: #B7B7B7;
+    margin: 10px;
+}
+
+h1 {
+    font-family: Oswald;
+    font-size:x-large;
+    }
+
+button {
+     font-family: Oswald;
+     background-color: #EFEFEF;
+     border-radius: 18px;
+     border-style: none;
+     box-shadow: 0px 3px 6px #00000016;
+     border-radius: 18px;
+     padding: 5px 10px 5px 10px;
+     height: 35px;
+     margin-top: 10px;
+    }
+  
+button:hover {
+    cursor: pointer;
+    background-color: #A88661;
+    color: white;
+}
+.add-btn {
+    width: 100%;
+}
+
+@media (min-width: 768px ) {
+    button {
+        height: 30px;
+        margin-left: 10px;
+        margin-top: unset;
+    }
+    .add-btn {
+        max-width: 60px;
+    }
+
+}
+
+
+
+
+
+/*_______________*/
+
+.wrapper-sec {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px 10px;
+}  
+
+.wrapper-memories {
+    margin: 0 20px 0 20px;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .wrapper-memories {
+        align-items:unset;
+    }
+    .container-memories {
+       width: 50%;
+    } 
+}
+.headings {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.cocktail-name{
+    font-size: 16px;
+    margin: 0 0 0 0;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+
+}
+
+.mainImage {
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .mainImage {
+       width: 50%;
+       max-width: 400px;
+       position: absolute;
+       left:45%;
+    } 
+}
+
+.sync-button {
+    position: absolute;
+    z-index: 1;
+    right: 1em;
 }

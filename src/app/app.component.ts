@@ -12,7 +12,7 @@ export class AppComponent {
 
   constructor(swUpdate: SwUpdate, private swPush: SwPush, private httpClient: HttpClient) {
     swUpdate.available.subscribe(() => {
-      if(confirm('Udate verfügbar! Jetzt neuladen?')){
+      if(confirm('Update verfügbar! Jetzt neuladen?')){
         location.reload();
       }
     });

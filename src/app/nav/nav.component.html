@@ -3,10 +3,10 @@
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>Menu</mat-toolbar>
+    <mat-toolbar class="nav-menu">MENU</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item routerLink="">Home</a>
-      <a mat-list-item routerLink="about">About</a>
+      <a mat-list-item routerLink="">COCKTAILS</a>
+      <a mat-list-item routerLink="about">ABOUT</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -19,7 +19,9 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>codi</span>
+      <span>
+        <img class="logo" src="../../assets/logo1.png" alt="logo codi">
+      </span>
     </mat-toolbar>
     <!-- Add Content Here -->
     <ng-content></ng-content>

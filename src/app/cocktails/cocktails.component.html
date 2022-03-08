@@ -1,13 +1,51 @@
-<p>Hallo</p>
-<input #nameCocktail placeholder="Tequila Sunrise">
-<input #hashtagCocktail placeholder="#fruity #LAvibes">
+<div class="wrapper">
+  <div class="sync-button">
+    <button (click)="sync()">Sync here</button>
+  </div>
+</div>
+
+<div class="wrapper">
+  <div class="wrapper-input">
+
+    <h1>Your Cocktail Diary </h1>
+
+    <p>Describe your Cocktail Experience</p>
+    <div class="wrapper-container">
+      <div class="container-input">
+        <label for="cocktailname" name="cocktailname" class="cocktail-label">🍸</label>
+        <input id ="cocktailname" name="cocktailname" class="cocktail-input" placeholder="Tequila Sunrise"  #nameCocktail>
+      </div>
+    
+      <div class="container-input">
+        <label for="hashtag" name="hashtag" class="hastag-label">#</label>
+        <input id="hashtag" name="hastag" class="hastag-input" placeholder="#fruity #LAvibes" #hashtagCocktail>
+      </div>
+
+      <button class="add-btn bubbly-button" (click)="add(nameCocktail.value, hashtagCocktail.value)">Add</button>
+
+    </div>
+
+    
+</div>
 
 
-<button (click)="add(nameCocktail.value, hashtagCocktail.value)">Hinzufügen</button>
-<button (click)="sync()">Sync</button>
+  <div class="wrapper-container wrapper-memories">
+    <div class="container-memories">
+      <p class="headings">Memories:</p>
+      
+      <ul class="list">
+        <li *ngFor="let cocktails of cocktails">
+          <p class="cocktail-name">{{ cocktails.cocktail }}</p>
+          <p class="cocktail-hashtag"> {{ "#" + cocktails.hashtag}} </p>
+        </li>
+      </ul>
+    </div>
+  
+      <img class="mainImage" src="../../assets/mainImage.svg" alt="cheerful drinking">
 
-<ul>
-    <li *ngFor="let cocktails of cocktails">
-      {{ cocktails.cocktail + " " + cocktails.hashtag }}
-    </li>
-  </ul>
+  </div>
+
+</div>
+
+
+

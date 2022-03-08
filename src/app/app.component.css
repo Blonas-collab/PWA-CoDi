@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    font-family: Oswald;
+    color: #707070;
+}
+
+button {
+    font-family: Oswald;
+    background-color: #EAD6BD;
+    color: #707070;
+    border-style: none;
+    box-shadow: 0px 3px 6px #00000016;
+    padding: 5px 10px 5px 10px;
+    height: 35px;
+    width: 100%;
+   }
+ 
+button:hover {
+    cursor: pointer;
+    background-color: #A88661;
+    color: white;
+}
+
